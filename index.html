@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXORA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body>
+    <!-- position-fixed top-0 w-100 z-3 -->
+    <header class="">
+        <div class="container-fluid p-0">
+            <div class="container ">
+                <nav class="d-flex  justify-content-between py-3">
+                    <div class="logo d-flex align-items-center">
+                        <svg width="117" height="45" viewBox="0 0 117 45" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="1.25" width="116" height="42.5" stroke="#73FE01" />
+                            <path d="M10 34.25V10.75L29 23.25V10.75H36.5V34.25H29L18 23.25V34.25H10Z" fill="#73FE01" />
+                            <path
+                                d="M55 23.25L42.5 10.75L60 10.75L65.5 18.5L75 10.75H86.3756L75 22.1256L82 34.25H72.3509L63.5 24.5L55 34.25H44L55 23.25Z"
+                                fill="#73FE01" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M92.5 10.75V34.25H107V10.75H92.5ZM103 16.25H97V29.25L102.5 29.5L103 16.25Z"
+                                fill="#73FE01" />
+                            <path d="M10 34.25V10.75L29 23.25V10.75H36.5V34.25H29L18 23.25V34.25H10Z" stroke="black" />
+                            <path
+                                d="M55 23.25L42.5 10.75L60 10.75L65.5 18.5L75 10.75H86.3756L75 22.1256L82 34.25H72.3509L63.5 24.5L55 34.25H44L55 23.25Z"
+                                stroke="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M92.5 10.75V34.25H107V10.75H92.5ZM103 16.25H97V29.25L102.5 29.5L103 16.25Z"
+                                stroke="black" />
+                        </svg>
+
+                    </div>
+                    <div class="items d-flex  align-items-center text-uppercase">
+                        <ul class="nav-list d-lg-flex d-none m-0 p-0 align-items-center  me-3">
+                            <li class="px-xxl-5 px-xl-4 px-lg-3   ">market making</li>
+                            <li class="px-xxl-5 px-xl-4 px-lg-3   ">Acceleration</li>
+                            <li class="px-xxl-5 px-xl-4 px-lg-3   ">Crypto PoS</li>
+                            <li class="px-xxl-5 px-xl-4 px-lg-3   ">nxo Wallet</li>
+                        </ul>
+                        <a
+                            class="btn ms-xl-5 ms-lg-2    d-lg-flex d-none align-items-center gap-lg-4 gap-md-2 px-4 py-3">contact
+                            <span class="arrow_svg d-flex align-self-center"><svg width="40" height="9"
+                                    viewBox="0 0 40 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4.49967H38M38 4.49967L33.8 1M38 4.49967L33.8 8" stroke="#73FE01"
+                                        stroke-width="1.68" />
+                                </svg></span>
+                        </a>
+                        <button class="tg-btn bg-transparent d-flex align-items-center border-0 d-lg-none d-flex"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="#73fe01" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M4 6l16 0" />
+                                <path d="M4 12l16 0" />
+                                <path d="M4 18l16 0" />
+                            </svg></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class=" container-fluid hero-banner align-content-center position-relative  ">
+        <div class="spiral position-absolute top-0 left-0  ">
+            <!--  -->
+            <svg width="855" height="1263" viewBox="0 0 855 1263" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M57.3492 1017.92C47.1434 1040.73 31.3959 1058.46 14.2093 1068.67C-2.97884 1078.89 -21.5633 1081.59 -37.5087 1074.45C-53.454 1067.32 -63.8322 1051.67 -67.671 1032.04C-71.5094 1012.42 -68.7951 988.872 -58.5893 966.057C-48.3835 943.242 -32.6357 925.521 -15.449 915.303C1.73905 905.085 20.3233 902.391 36.2686 909.524C52.2138 916.657 62.5924 932.307 66.4313 951.931C70.2697 971.553 67.555 995.105 57.3492 1017.92Z"
+                    stroke="url(#paint0_linear_3335_16087)" />
+                <path
+                    d="M70.2149 1006.27C58.2179 1033.09 39.7051 1053.93 19.4958 1065.94C-0.714959 1077.95 -22.5796 1081.13 -41.3461 1072.73C-60.1126 1064.34 -72.3191 1045.92 -76.8329 1022.85C-81.3464 999.776 -78.1541 972.088 -66.1572 945.269C-54.1604 918.45 -35.6476 897.617 -15.4385 885.603C4.77213 873.587 26.6369 870.413 45.4034 878.807C64.17 887.202 76.3763 905.618 80.8902 928.693C85.4036 951.767 82.2116 979.453 70.2149 1006.27Z"
+                    stroke="url(#paint1_linear_3335_16087)" />
+                <path
+                    d="M72.2416 1001.74C58.7894 1031.82 38.0303 1055.18 15.3651 1068.66C-7.30145 1082.13 -31.8313 1085.69 -52.8901 1076.27C-73.9487 1066.85 -87.6406 1046.19 -92.7029 1020.31C-97.7649 994.436 -94.1839 963.388 -80.7317 933.316C-67.2795 903.243 -46.5203 879.879 -23.8552 866.405C-1.18877 852.93 23.3405 849.365 44.3992 858.785C65.458 868.206 79.1505 888.868 84.2129 914.747C89.2749 940.624 85.6938 971.673 72.2416 1001.74Z"
+                    stroke="url(#paint2_linear_3335_16087)" />
+                <path
+                    d="M75.454 996.647C60.8264 1029.35 38.2525 1054.75 13.6037 1069.41C-11.0464 1084.06 -37.7289 1087.94 -60.6391 1077.69C-83.5491 1067.45 -98.4403 1044.97 -103.946 1016.82C-109.451 988.682 -105.556 954.919 -90.9283 922.219C-76.3007 889.519 -53.7272 864.113 -29.0785 849.46C-4.42845 834.805 22.2533 830.925 45.1634 841.173C68.0737 851.421 82.9655 873.899 88.4708 902.043C93.9758 930.185 90.0814 963.947 75.454 996.647Z"
+                    stroke="url(#paint3_linear_3335_16087)" />
+                <path
+                    d="M87.6222 981.426C70.4188 1019.88 44.1538 1049.9 15.6204 1067.34C-12.9154 1084.78 -43.6711 1089.63 -69.926 1077.89C-96.1809 1066.14 -113.065 1039.98 -119.08 1007.08C-125.095 974.185 -120.228 934.602 -103.025 896.144C-85.8216 857.686 -59.5566 827.675 -31.0232 810.232C-2.4873 792.788 28.2691 787.937 54.5241 799.682C80.7788 811.426 97.6621 837.587 103.677 870.487C109.692 903.385 104.826 942.968 87.6222 981.426Z"
+                    stroke="url(#paint4_linear_3335_16087)" />
+                <path
+                    d="M87.0031 993.106C71.0323 1028.81 46.3492 1056.53 19.3762 1072.51C-7.59817 1088.49 -36.8203 1092.69 -61.9352 1081.46C-87.0502 1070.22 -103.393 1045.63 -109.462 1014.88C-115.531 984.121 -111.314 947.24 -95.3431 911.538C-79.3724 875.835 -54.6892 848.109 -27.7162 832.134C-0.741644 816.158 28.4815 811.952 53.5965 823.187C78.7113 834.422 95.0532 859.01 101.122 889.767C107.191 920.523 102.974 957.404 87.0031 993.106Z"
+                    stroke="url(#paint5_linear_3335_16087)" />
+                <path
+                    d="M93.3437 978.557C74.7421 1020.14 46.0334 1052.46 14.6784 1071.1C-16.6781 1089.74 -50.6377 1094.68 -79.8075 1081.63C-108.977 1068.59 -127.925 1039.97 -134.928 1004.17C-141.931 968.373 -136.976 925.433 -118.374 883.849C-99.7727 842.266 -71.0637 809.951 -39.7086 791.31C-8.35216 772.669 25.6075 767.723 54.7772 780.771C83.9469 793.82 102.895 822.433 109.898 858.234C116.901 894.032 111.945 936.973 93.3437 978.557Z"
+                    stroke="url(#paint6_linear_3335_16087)" />
+                <path
+                    d="M107.196 966.8C86.5792 1012.89 54.6888 1048.67 19.8182 1069.28C-15.0537 1089.89 -52.8644 1095.31 -85.3855 1080.76C-117.906 1066.22 -139.07 1034.42 -146.947 994.685C-154.825 954.952 -149.404 907.326 -128.787 861.238C-108.171 815.151 -76.2802 779.366 -41.4096 758.756C-6.53776 738.145 31.2722 732.728 63.7932 747.276C96.3143 761.824 117.478 793.621 125.356 833.355C133.233 873.088 127.812 920.713 107.196 966.8Z"
+                    stroke="url(#paint7_linear_3335_16087)" />
+                <path
+                    d="M118.037 959.687C95.7411 1009.53 61.2584 1048.23 23.5541 1070.53C-14.1515 1092.82 -55.0369 1098.69 -90.2028 1082.96C-125.369 1067.23 -148.246 1032.84 -156.757 989.869C-165.267 946.901 -159.397 895.397 -137.102 845.556C-114.806 795.715 -80.3236 757.011 -42.6194 734.716C-4.91374 712.42 35.9716 706.554 71.1375 722.285C106.303 738.015 129.181 772.405 137.692 815.374C146.202 858.342 140.332 909.845 118.037 959.687Z"
+                    stroke="url(#paint8_linear_3335_16087)" />
+                <path
+                    d="M123.372 947.4C100.069 999.494 64.0307 1039.95 24.6262 1063.25C-14.7796 1086.56 -57.5098 1092.7 -94.2625 1076.26C-131.015 1059.82 -154.921 1023.87 -163.811 978.961C-172.701 934.052 -166.563 880.221 -143.26 828.128C-119.957 776.034 -83.9185 735.579 -44.514 712.273C-5.10812 688.967 37.622 682.83 74.3748 699.27C111.128 715.711 135.033 751.656 143.923 796.567C152.813 841.476 146.675 895.306 123.372 947.4Z"
+                    stroke="url(#paint9_linear_3335_16087)" />
+                <path
+                    d="M141.203 933.61C115.605 990.834 75.9884 1035.26 32.6535 1060.84C-10.6826 1086.43 -57.6955 1093.14 -98.1515 1075.05C-138.607 1056.95 -164.935 1017.43 -174.748 968.068C-184.561 918.711 -177.846 859.565 -152.248 802.341C-126.65 745.118 -87.0335 700.689 -43.6986 675.107C-0.36248 649.525 46.6504 642.808 87.1064 660.905C127.562 679.002 153.89 718.526 163.703 767.884C173.516 817.241 166.8 876.387 141.203 933.61Z"
+                    stroke="url(#paint10_linear_3335_16087)" />
+                <path
+                    d="M144.705 925.406C117.708 985.757 75.967 1032.63 30.3284 1059.65C-15.3116 1086.66 -64.8073 1093.79 -107.379 1074.74C-149.95 1055.7 -177.626 1014.05 -187.909 962.022C-198.191 909.995 -191.067 847.633 -164.07 787.281C-137.072 726.929 -95.3312 680.053 -49.6926 653.041C-4.05265 626.029 45.4426 618.901 88.0139 637.944C130.585 656.987 158.262 698.637 168.545 750.665C178.827 802.692 171.703 865.054 144.705 925.406Z"
+                    stroke="url(#paint11_linear_3335_16087)" />
+                <path
+                    d="M172.63 909.604C142.33 977.338 95.455 1029.94 44.1857 1060.24C-7.08482 1090.54 -62.7081 1098.51 -110.569 1077.11C-158.431 1055.7 -189.557 1008.91 -201.142 950.496C-212.727 892.08 -204.757 822.076 -174.458 754.341C-144.158 686.607 -97.2832 634.007 -46.014 603.708C5.25641 573.408 60.8793 565.43 108.741 586.84C156.602 608.249 187.729 655.034 199.314 713.45C210.899 771.866 202.929 841.87 172.63 909.604Z"
+                    stroke="url(#paint12_linear_3335_16087)" />
+                <path
+                    d="M179.384 894.144C147.573 965.257 98.4006 1020.5 44.6386 1052.34C-9.1246 1084.18 -67.4356 1092.6 -117.589 1070.17C-167.742 1047.73 -200.332 998.652 -212.429 937.349C-224.525 876.048 -216.117 802.568 -184.306 731.456C-152.495 660.343 -103.322 605.099 -49.5604 573.259C4.20295 541.417 62.5137 532.998 112.667 555.433C162.82 577.868 195.41 626.949 207.507 688.252C219.604 749.553 211.194 823.032 179.384 894.144Z"
+                    stroke="url(#paint13_linear_3335_16087)" />
+                <path
+                    d="M203.268 873.289C168.211 951.659 114.026 1012.55 54.7857 1047.64C-4.45591 1082.74 -68.7115 1092.03 -123.978 1067.31C-179.245 1042.59 -215.148 988.494 -228.468 920.936C-241.789 853.38 -232.513 772.403 -197.456 694.033C-162.399 615.663 -108.215 554.776 -48.9743 519.679C10.2674 484.58 74.5232 475.291 129.79 500.013C185.056 524.735 220.959 578.829 234.28 646.387C247.6 713.943 238.325 794.919 203.268 873.289Z"
+                    stroke="url(#paint14_linear_3335_16087)" />
+                <path
+                    d="M241.723 852.426C202.412 940.306 141.661 1008.59 75.2416 1047.95C8.82112 1087.32 -63.2252 1097.75 -125.192 1070.03C-187.159 1042.31 -227.404 981.649 -242.328 905.895C-257.251 830.142 -246.84 739.342 -207.529 651.463C-168.218 563.583 -107.467 495.302 -41.0481 455.937C25.3723 416.571 97.4183 406.141 159.385 433.86C221.352 461.58 261.597 522.241 276.521 597.995C291.445 673.747 281.034 764.547 241.723 852.426Z"
+                    stroke="url(#paint15_linear_3335_16087)" />
+                <path
+                    d="M259.086 836.259C217.256 929.769 152.581 1002.41 81.8537 1044.28C11.1251 1086.15 -65.6138 1097.22 -131.637 1067.68C-197.659 1038.15 -240.555 973.562 -256.486 892.93C-272.416 812.299 -261.369 715.666 -219.539 622.156C-177.709 528.646 -113.034 456.002 -42.3071 414.135C28.4215 372.268 105.16 361.198 171.183 390.732C237.206 420.266 280.102 484.852 296.032 565.484C311.963 646.116 300.916 742.749 259.086 836.259Z"
+                    stroke="url(#paint16_linear_3335_16087)" />
+                <path
+                    d="M302.919 810.193C256.388 914.214 184.454 995.03 105.793 1041.61C27.1296 1088.2 -58.2191 1100.53 -131.647 1067.68C-205.076 1034.84 -252.77 962.99 -270.473 873.298C-288.176 783.609 -275.874 676.118 -229.343 572.097C-182.811 468.077 -110.878 387.261 -32.2163 340.677C46.4467 294.093 131.796 281.762 205.224 314.609C278.653 347.455 326.347 419.301 344.05 508.992C361.752 598.682 349.451 706.173 302.919 810.193Z"
+                    stroke="url(#paint17_linear_3335_16087)" />
+                <path
+                    d="M326.586 788.148C276.696 899.676 199.578 986.33 115.249 1036.28C30.9184 1086.24 -60.5806 1099.47 -139.298 1064.25C-218.016 1029.04 -269.139 952.011 -288.108 855.849C-307.076 759.689 -293.877 644.442 -243.988 532.914C-194.098 421.386 -116.98 334.731 -32.6514 284.779C51.679 234.826 143.178 221.594 221.897 256.807C300.614 292.02 351.736 369.05 370.705 465.212C389.674 561.372 376.475 676.62 326.586 788.148Z"
+                    stroke="url(#paint18_linear_3335_16087)" />
+                <path
+                    d="M353.725 772.013C300.925 890.047 219.314 981.761 130.074 1034.63C40.8316 1087.51 -55.9984 1101.52 -139.301 1064.25C-222.603 1026.99 -276.696 945.467 -296.762 843.697C-316.827 741.929 -302.853 619.96 -250.052 501.926C-197.252 383.891 -115.64 292.178 -26.3995 239.305C62.8425 186.432 159.672 172.42 242.974 209.683C326.277 246.947 380.37 328.472 400.436 430.241C420.501 532.01 406.525 653.979 353.725 772.013Z"
+                    stroke="url(#paint19_linear_3335_16087)" />
+                <path
+                    d="M389.216 750.907C332.609 877.45 245.122 975.779 149.458 1032.47C53.7933 1089.16 -50.0063 1104.2 -139.304 1064.25C-228.601 1024.3 -286.579 936.903 -308.079 827.8C-329.579 718.698 -314.588 587.94 -257.982 461.396C-201.376 334.853 -113.888 236.524 -18.2243 179.833C77.4407 123.141 181.24 108.108 270.537 148.054C359.835 187.999 417.813 275.4 439.313 384.503C460.813 493.604 445.822 624.364 389.216 750.907Z"
+                    stroke="url(#paint20_linear_3335_16087)" />
+                <path
+                    d="M426.802 728.57C366.165 864.122 272.457 969.457 169.993 1030.19C67.5267 1090.93 -43.654 1107.04 -139.299 1064.25C-234.944 1021.47 -297.035 927.846 -320.054 810.978C-343.073 694.112 -327.006 554.046 -266.37 418.494C-205.734 282.942 -112.026 177.608 -9.56134 116.874C92.9045 56.1394 204.085 40.0251 299.73 82.8098C395.375 125.595 457.467 219.219 480.486 336.086C503.504 452.953 487.438 593.018 426.802 728.57Z"
+                    stroke="url(#paint21_linear_3335_16087)" />
+                <path
+                    d="M466.467 704.985C401.577 850.047 301.301 962.776 191.658 1027.78C82.0135 1092.78 -36.9565 1110.03 -139.302 1064.25C-241.647 1018.47 -308.081 918.279 -332.703 793.215C-357.325 668.153 -340.124 518.263 -275.233 373.201C-210.343 228.139 -110.067 115.411 -0.424181 50.4092C109.22 -14.5931 228.19 -31.8478 330.536 13.9343C432.881 59.7164 499.315 159.907 523.937 284.971C548.559 410.034 531.358 559.924 466.467 704.985Z"
+                    stroke="url(#paint22_linear_3335_16087)" />
+                <path
+                    d="M542.091 662.684C470.26 823.261 359.27 948.055 237.915 1020.02C116.557 1091.98 -15.1233 1111.1 -128.401 1060.43C-241.679 1009.76 -315.196 898.849 -342.434 760.412C-369.672 621.977 -350.618 456.058 -278.787 295.481C-206.956 134.904 -95.9663 10.1106 25.3895 -61.8539C146.747 -133.819 278.427 -152.936 391.705 -102.263C504.983 -51.5908 578.5 59.3166 605.738 197.753C632.976 336.188 613.922 502.107 542.091 662.684Z"
+                    stroke="url(#paint23_linear_3335_16087)" />
+                <path
+                    d="M578.523 646.355C502.438 816.442 384.881 948.629 256.346 1024.86C127.81 1101.09 -11.6601 1121.35 -131.638 1067.68C-251.616 1014.01 -329.475 896.537 -358.317 749.904C-387.158 603.273 -366.969 427.53 -290.885 257.444C-214.8 87.3573 -97.2425 -44.8298 31.2919 -121.062C159.828 -197.295 299.299 -217.553 419.277 -163.883C539.255 -110.213 617.113 7.26229 645.955 153.895C674.796 300.526 654.607 476.268 578.523 646.355Z"
+                    stroke="url(#paint24_linear_3335_16087)" />
+                <defs>
+                    <linearGradient id="paint0_linear_3335_16087" x1="22.257" y1="872.189" x2="38.3155" y2="1042.67"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_3335_16087" x1="28.9063" y1="835.024" x2="47.7728" y2="1035.31"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_3335_16087" x1="25.8825" y1="809.763" x2="47.0306" y2="1034.27"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_3335_16087" x1="25.0154" y1="787.918" x2="48.0062" y2="1031.99"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_3335_16087" x1="31.9209" y1="737.657" x2="62.0069" y2="1022.4"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint5_linear_3335_16087" x1="31.4436" y1="765.033" x2="56.1632" y2="1031.73"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint6_linear_3335_16087" x1="29.1134" y1="713.209" x2="58.3345" y2="1023.42"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint7_linear_3335_16087" x1="35.0535" y1="672.334" x2="66.6798" y2="1016.61"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint8_linear_3335_16087" x1="40.0669" y1="641.296" x2="74.3257" y2="1013.52"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint9_linear_3335_16087" x1="41.9062" y1="614.655" x2="77.7444" y2="1003.65"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint10_linear_3335_16087" x1="51.3129" y1="567.965" x2="90.3728" y2="995.409"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint11_linear_3335_16087" x1="50.4186" y1="540.028" x2="92.0482" y2="990.503"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint12_linear_3335_16087" x1="66.4224" y1="476.972" x2="112.853" y2="982.67"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint13_linear_3335_16087" x1="68.3905" y1="440.187" x2="117.566" y2="970.777"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint14_linear_3335_16087" x1="81.0082" y1="373.078" x2="135.274" y2="957.701"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint15_linear_3335_16087" x1="104.7" y1="291.61" x2="165.634" y2="947.032"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint16_linear_3335_16087" x1="112.862" y1="239.351" x2="177.369" y2="936.955"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint17_linear_3335_16087" x1="140.378" y1="146.3" x2="212.255" y2="922.157"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint18_linear_3335_16087" x1="152.389" y1="76.4069" x2="229.531" y2="908.159"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint19_linear_3335_16087" x1="169.428" y1="18.8041" x2="251.133" y2="898.998"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint20_linear_3335_16087" x1="191.709" y1="-56.5288" x2="279.381" y2="887.013"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint21_linear_3335_16087" x1="215.308" y1="-136.282" x2="309.298" y2="874.333"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint22_linear_3335_16087" x1="240.21" y1="-220.473" x2="340.87" y2="860.942"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint23_linear_3335_16087" x1="291.747" y1="-361.659" x2="403.287" y2="835.272"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                    <linearGradient id="paint24_linear_3335_16087" x1="313.415" y1="-438.594" x2="431.624" y2="829.136"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#459801" stop-opacity="0" />
+                        <stop offset="1" stop-color="#73FE01" />
+                    </linearGradient>
+                </defs>
+            </svg>
+
+        </div>
+        <div class="bg-circle">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class=" ms-auto text-end col-xl-7 col-lg-8  col-11 text-uppercase">
+                    <div class="content">
+                        <h2 class="title lh-1">
+                            BUILT FOR THE NEXT <span class="green">GENERATION</span> OF FINANCE
+                        </h2>
+                        <h5 class="para  ps-5 ">
+                            Nexora unites innovation, liquidity, and security to redefine the decentralized economy.
+                        </h5>
+                        <div
+                            class="des d-flex justify-content-end align-items-lg-center gap-5 flex-lg-row flex-column align-items-end">
+                            <h6 class="quote m-0">Trusted by innovators. Powered by blockchain.</h6>
+                            <button
+                                class=" btn2 px-4 py-3 bg-transparent text-white d-flex align-items-center gap-3 text-uppercase ">
+                                Explore Nexora <span class="arr-svg"><svg width="40" height="9" viewBox="0 0 40 9"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4.49967H38M38 4.49967L33.8 1M38 4.49967L33.8 8" stroke="#73FE01"
+                                            stroke-width="1.68" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="discover-products container-fluid ">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="content text-center">
+                    <h6 class="sub-title text-uppercase">
+                        Discover products
+                    </h6>
+                    <h3 class="title text-uppercase">
+                        nxo Ecosystem
+                    </h3>
+                </div>
+            </div>
+            <div class="row d-flex flex-lg-row flex-column g-3  px-lg-0 px-3">
+                <div class="col">
+                    <div class="card d-flex flex-row position-relative overflow-hidden">
+                        <div class="bg-img position-absolute top-0 start-0 ">
+                            <img src="./src/img/card-bg.png" alt="">
+                        </div>
+                        <div class="blurdot  position-absolute top-50 start-0 "></div>
+                        <div class="line  position-absolute top-50 start-0"><img src="./src/img/Line 62.png" alt="">
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between">
+                            <div class="heading d-flex mb-5 ">
+                                <span class="nxo">
+                                    NXO
+                                </span>
+                                <h2 class="text-white pos">POS</h2>
+                            </div>
+                            <p class="para m-0 p-0 mb-5 ">
+                                Accept Crypto Payments Instantly,Anytime, Anywhere!
+                            </p>
+                            <button class="card-btn bg-transparent rounded-5">NXO crypto POS</button>
+                        </div>
+                        <div class="coin-img align-self-center mx-auto">
+                            <img src="./src/img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-row position-relative overflow-hidden">
+                        <div class="bg-img position-absolute top-0 start-0 ">
+                            <img src="./src/img/card-bg.png" alt="">
+                        </div>
+                        <div class="blurdot  position-absolute top-50 start-0 "></div>
+                        <div class="line  position-absolute top-50 start-0"><img src="./src/img/Line 62.png" alt="">
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between">
+                            <div class="heading d-flex mb-5 ">
+                                <span class="nxo">
+                                    NXO
+                                </span>
+                                <h2 class="text-white pos">POS</h2>
+                            </div>
+                            <p class="para m-0 p-0 mb-5 ">
+                                Accept Crypto Payments Instantly,Anytime, Anywhere!
+                            </p>
+                            <button class="card-btn bg-transparent rounded-5">NXO crypto POS</button>
+                        </div>
+                        <div class="coin-img align-self-center mx-auto">
+                            <img src="./src/img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about-nxo">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="content  text-center">
+                    <h6 class="sub-title">
+                        about nxo
+                    </h6>
+                    <h3 class="title">
+                        stats & tokenomics
+                    </h3>
+                </div>
+            </div>
+
+            <div class=" row d-flex flex-lg-row flex-column gap-lg-0 gap-3 flex-column px-lg-0 px-3">
+                <div class="col">
+                    <div class="card d-flex flex-row position-relative overflow-hidden h-100  ">
+                        <div class=" bg-img position-absolute top-50 start-0 ">
+                            <img src="./src/img/card-bg.png" alt="">
+                        </div>
+                        <div class=" blurdot  position-absolute top-50 start-0 "></div>
+                        <div class=" line position-absolute top-50 start-0"><img src="./src/img/Line 62.png" alt="">
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between gap-4 position-relative z-3">
+
+                            <p class="para m-0 p-0 d-flex flex-column text-uppercase gap-2">
+                                tokonomics
+                                <span class="price">10,000,000,000 NXO</span>
+                            </p>
+                            <div class="btns d-flex gap-4 ">
+                                <button
+                                    class="card-btn d-flex gap-2 align-content-center  bg-transparent rounded-5 px-md-5 px-sm-3 px-none">
+                                    <div class="btn-icon"><img src="./src/img/btn-img1.png" alt=""></div>CMC
+                                </button>
+                                <button
+                                    class="card-btn d-flex gap-2 align-content-center bg-transparent rounded-5 px-md-5 px-sm-4 px-none">
+                                    <div class="btn-icon"><img src="./src/img/btn-img2.png" alt=""></div>CG
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="coin-img mx-md-auto ms-auto">
+                            <img src="./src/img/coin.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card d-flex flex-row position-relative overflow-hidden h-100  ">
+                        <div class=" bg-img position-absolute top-50 start-0 ">
+                            <img src="./src/img/card-bg.png" alt="">
+                        </div>
+                        <div class=" blurdot  position-absolute top-50 start-0 "></div>
+                        <div class=" line position-absolute top-50 start-0"><img src="./src/img/Line 62.png" alt="">
+                        </div>
+                        <div class="content d-flex flex-column justify-content-between gap-4 position-relative z-3">
+
+                            <p class="para m-0 p-0 d-flex flex-column text-uppercase gap-2">
+                                tokonomics
+                                <span class="price">Discover our audits</span>
+                            </p>
+                            <div class="btns d-flex gap-4 ">
+                                <button
+                                    class="card-btn d-flex gap-2 align-content-center  bg-transparent rounded-5 px-md-5 px-sm-3 px-none">
+                                    <div class="btn-icon"><img src="./src/img/btn-img1.png" alt=""></div>CMC
+                                </button>
+                                <button
+                                    class="card-btn d-flex gap-2 align-content-center bg-transparent rounded-5 px-md-5 px-sm-4 px-none">
+                                    <div class="btn-icon"><img src="./src/img/btn-img2.png" alt=""></div>CG
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="coin-img mx-md-auto ms-auto">
+                            <img src="./src/img/security.png" alt="coin">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class=" about-table mt-5">
+                <div class="content container">
+                    <div class="row px-3 g-4 ">
+                        <div class="col-12  ">
+                            <div class="token-info d-flex justify-content-between px-4 py-3 rounded-4">
+                                <span class="icon me-2"> <img src="./src/img/Frame 289814.svg" alt=""></span>
+                                <input type="text"
+                                    class="text m-0 align-self-center bg-transparent outline-none border-0 w-100 "
+                                    readonly value="AhknttEpQiF3y3oBUxiQed1nTot1sfLLsa82tWye7fMh">
+                                <button class="icon ms-2 outline-none border-0 bg-transparent"
+                                    title="Copy wallet address"
+                                    onclick="navigator.clipboard.writeText('AhknttEpQiF3y3oBUxiQed1nTot1sfLLsa82tWye7fMh');"><img
+                                        src="./src/img/copy.svg" alt=""></button>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div
+                                class="token-info d-flex justify-content-between align-items-center px-4 py-3 rounded-4 ">
+                                <h6 class="title m-0">price</h6>
+                                <p class="price">$0.00251</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 ">
+                            <div
+                                class="token-info d-flex justify-content-between align-items-center px-4 py-3 rounded-4">
+                                <h6 class="title m-0">marketcap</h6>
+                                <p class="price">$258k</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div
+                                class="token-info d-flex justify-content-between align-items-center px-4 py-3 rounded-4">
+                                <h6 class="title m-0">total supply</h6>
+                                <p class="price">10,000,000,000</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div
+                                class="token-info d-flex justify-content-between align-items-center px-4 py-3 rounded-4">
+                                <h6 class="title m-0">Circulating Supply</h6>
+                                <p class="price">2,969,256,464</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="buy-nxo">
+        <div class=" container-2 overflow-hidden">
+            <div class="container">
+                <div class="line d-flex "><img src="./src/img/Line 62.png" alt=""></div>
+                <div class="card-bg"><img src="./src/img/bg2.png" alt=""></div>
+                <span class="blurdot position-absolute top-0 "></span>
+                <div class="content row">
+                    <div class="col-sm-6  col-7 d-flex  mt-2 flex-column text-uppercase">
+                        <div class="sub-title">
+                            where to buy nxo &nbsp;?
+                        </div>
+                        <div class="title">
+                            buy nxo
+                        </div>
+                        <div class="para mt-4">top exchange <span class="grey">(CEX)</span></div>
+                    </div>
+                    <div class="col-sm-6 col-5 ">
+                        <div class="coin-img mx-auto ">
+                            <img src="./src/img/coin.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class=" slide mt-3 d-flex flex-wrap align-content-center gap-3 justify-content-center">
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/1.svg" alt=""></span>
+                        <span class="title">DELTA NXO/USDT</span>
+                    </div>
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/2.svg" alt=""></span>
+                        <span class="title">BITGIT NXO/USDT</span>
+
+                    </div>
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/3.svg" alt=""></span>
+                        <span class="title">TON NXO/USDT</span>
+
+                    </div>
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/4.svg" alt=""></span>
+                        <span class="title">TRUST NXO/USDT</span>
+
+                    </div>
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/5.svg" alt=""></span>
+                        <span class="title">PHONTOM USDT</span>
+
+                    </div>
+                    <div class="card">
+                        <span class="icon"><img src="./src/img/card-imgs/6.svg" alt=""></span>
+                        <span class="title">KU NXO/USDT</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="follow-us">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col heading text-center">
+                    <h6 class="sub-title">
+                        community
+                    </h6>
+                    <h3 class="title">
+                        follow us !
+                    </h3>
+                </div>
+            </div>
+            <div
+                class=" row mx-1 position-relative overflow-hidden  flex-md-row flex-column wrapper justify-content-between ">
+                <div class="line d-flex position-absolute top-0 "><svg width="261" height="1" viewBox="0 0 261 1"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="0.5" x2="261" y2="0.5" stroke="url(#paint0_linear_3335_17159)" />
+                        <defs>
+                            <linearGradient id="paint0_linear_3335_17159" x1="0" y1="1.5" x2="261" y2="1.5"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#73FE01" stop-opacity="0" />
+                                <stop offset="0.5" stop-color="#73FE01" />
+                                <stop offset="1" stop-color="#73FE01" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg></div>
+                <span class="bg-img position-absolute top-0 "><img src="./src/img/bg2.png" alt=""></span>
+                <span class="blurdot position-absolute top-0 start-50"></span>
+                <div class=" col-md-6 col-12">
+                    <div class="content">
+                        <div class="title">
+                            NXO <span class="green">TOKEN</span>
+                        </div>
+                        <p class="para mt-4 text-uppercase me-0">Explore and follow our social networks, so as not to
+                            miss
+                            any NXO Labs
+                            news!</p>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-4 col-md-5 col-12 mt-md-0 mt-3  logos mx-auto d-flex flex-sm-nowrap flex-wrap justify-content-between">
+                    <div class="logo">
+                        <a href="" class="x"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.25 43.75L21.975 28.025M21.975 28.025L6.25 6.25H16.6667L28.025 21.975M21.975 28.025L33.3333 43.75H43.75L28.025 21.975M43.75 6.25L28.025 21.975"
+                                    stroke="#CCCCCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="" class="tel"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.9656 32.1006L31.7198 39.7798C34.2198 42.6235 35.4719 44.0464 36.7823 43.6985C38.0906 43.3527 38.5406 41.4818 39.4385 37.7381L44.4177 16.9714C45.8031 11.2048 46.4948 8.32351 44.9573 6.90059C43.4198 5.47767 40.7552 6.53601 35.426 8.65059L10.7052 18.4693C6.44269 20.1631 4.31144 21.0089 4.17602 22.4631C4.16008 22.6113 4.16008 22.7607 4.17602 22.9089C4.30727 24.3652 6.43436 25.2173 10.6927 26.9235C12.6198 27.6964 13.5844 28.0839 14.276 28.8235C14.3538 28.9068 14.4288 28.9929 14.501 29.0818C15.1385 29.8735 15.4094 30.9152 15.9531 32.9902L16.9719 36.8798C17.4989 38.9006 17.7635 39.9131 18.4573 40.0506C19.151 40.1881 19.7531 39.3506 20.9594 37.6735L24.9656 32.1006ZM24.9656 32.1006L24.3052 31.4131C23.551 30.6256 23.1739 30.2339 23.1739 29.7464C23.1739 29.2589 23.5489 28.8652 24.3052 28.0798L31.7489 20.3214"
+                                    stroke="#CCCCCC" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="" class="insta"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.21094 25.0007C5.21094 15.6715 5.21094 11.0048 8.10885 8.1069C11.0068 5.20898 15.6714 5.20898 25.0026 5.20898C34.3318 5.20898 38.9984 5.20898 41.8964 8.1069C44.7943 11.0048 44.7943 15.6694 44.7943 25.0007C44.7943 34.3298 44.7943 38.9965 41.8964 41.8944C38.9984 44.7923 34.3339 44.7923 25.0026 44.7923C15.6734 44.7923 11.0068 44.7923 8.10885 41.8944C5.21094 38.9965 5.21094 34.3319 5.21094 25.0007Z"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linejoin="round" />
+                                <path
+                                    d="M34.375 25C34.375 27.4864 33.3873 29.871 31.6291 31.6291C29.871 33.3873 27.4864 34.375 25 34.375C22.5136 34.375 20.129 33.3873 18.3709 31.6291C16.6127 29.871 15.625 27.4864 15.625 25C15.625 22.5136 16.6127 20.129 18.3709 18.3709C20.129 16.6127 22.5136 15.625 25 15.625C27.4864 15.625 29.871 16.6127 31.6291 18.3709C33.3873 20.129 34.375 22.5136 34.375 25Z"
+                                    stroke="#CCCCCC" stroke-width="3.75" />
+                                <path d="M36.474 13.543H36.4531" stroke="#CCCCCC" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="" class="yt"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.9974 42.7078C28.7682 42.7078 32.3828 42.3348 35.7328 41.6515C39.9203 40.7973 42.012 40.3723 43.9203 37.9182C45.8307 35.4619 45.8307 32.6432 45.8307 27.0057V22.9932C45.8307 17.3557 45.8307 14.5348 43.9203 12.0807C42.012 9.62651 39.9203 9.19942 35.7328 8.34734C32.1984 7.63892 28.6021 7.28508 24.9974 7.29109C21.2266 7.29109 17.612 7.66401 14.262 8.34734C10.0745 9.20151 7.98281 9.62651 6.07448 12.0807C4.16406 14.5369 4.16406 17.3557 4.16406 22.9932V27.0057C4.16406 32.6432 4.16406 35.464 6.07448 37.9182C7.98281 40.3723 10.0745 40.7994 14.262 41.6515C17.612 42.3348 21.2266 42.7078 24.9974 42.7078Z"
+                                    stroke="#CCCCCC" stroke-width="3.75" />
+                                <path
+                                    d="M33.2542 25.6523C32.9458 26.9148 31.3 27.819 28.0104 29.6336C24.4312 31.6065 22.6417 32.5919 21.1938 32.2106C20.7112 32.086 20.2604 31.861 19.8708 31.5502C18.75 30.644 18.75 28.7627 18.75 25.0002C18.75 21.2377 18.75 19.3565 19.8708 18.4502C20.25 18.144 20.7042 17.9169 21.1938 17.7898C22.6417 17.4086 24.4312 18.394 28.0104 20.3669C31.3021 22.1794 32.9458 23.0856 33.2542 24.3481C33.3583 24.7773 33.3583 25.2231 33.2542 25.6523Z"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="" class="rd"><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4531 33.334C21.8698 38.5423 28.1198 38.5423 38.5365 33.334"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M32.2917 36.459L34.375 40.6257C34.375 40.6257 43.0646 37.859 45.8333 33.334C45.8333 31.2507 46.9375 16.3611 39.5833 11.459C36.4583 9.37565 31.25 8.33398 31.25 8.33398L29.1667 12.5007H25"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17.7646 36.459L15.6813 40.6257C15.6813 40.6257 6.9917 37.859 4.22295 33.334C4.22295 31.2507 3.11878 16.3611 10.4729 11.459C13.598 9.37565 18.8063 8.33398 18.8063 8.33398L20.8896 12.5007H25.0563"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M17.7031 29.1673C15.9781 29.1673 14.5781 27.3027 14.5781 25.0007C14.5781 22.6986 15.9781 20.834 17.7031 20.834C19.4281 20.834 20.8281 22.6986 20.8281 25.0007C20.8281 27.3027 19.4281 29.1673 17.7031 29.1673ZM32.2865 29.1673C30.5615 29.1673 29.1615 27.3027 29.1615 25.0007C29.1615 22.6986 30.5615 20.834 32.2865 20.834C34.0115 20.834 35.4115 22.6986 35.4115 25.0007C35.4115 27.3027 34.0115 29.1673 32.2865 29.1673Z"
+                                    stroke="#CCCCCC" stroke-width="3.75" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row  mt-4 nxo-lab ">
+                <div class="col-sm-6 col- ">
+                    <div class="content wrapper-2 h-100">
+                        <span class="line d-flex position-absolute top-0 "><svg width="261" height="1"
+                                viewBox="0 0 261 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="261" y2="0.5" stroke="url(#paint0_linear_3335_17159)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_3335_17159" x1="0" y1="1.5" x2="261" y2="1.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#73FE01" stop-opacity="0" />
+                                        <stop offset="0.5" stop-color="#73FE01" />
+                                        <stop offset="1" stop-color="#73FE01" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="bg-img position-absolute top-0  "><img src="./src/img/bg2.png" alt=""></span>
+                        <span class="blurdot position-absolute top-0 ms-5"></span>
+                        <h5 class="title mb-4">
+                            NXO <span style="color: #73fe01;">LABS</span>
+                        </h5>
+                        <div class="logo gap-4 ">
+                            <a href="">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.25 43.75L21.975 28.025M21.975 28.025L6.25 6.25H16.6667L28.025 21.975M21.975 28.025L33.3333 43.75H43.75L28.025 21.975M43.75 6.25L28.025 21.975"
+                                        stroke="#CCCCCC" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                            <a href=""><svg width="41" height="41" viewBox="0 0 41 41" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2 35.3333V6.16667C2 5.0616 2.43899 4.00179 3.22039 3.22039C4.00179 2.43899 5.0616 2 6.16667 2H35.3333C36.4384 2 37.4982 2.43899 38.2796 3.22039C39.061 4.00179 39.5 5.0616 39.5 6.16667V35.3333C39.5 36.4384 39.061 37.4982 38.2796 38.2796C37.4982 39.061 36.4384 39.5 35.3333 39.5H6.16667C5.0616 39.5 4.00179 39.061 3.22039 38.2796C2.43899 37.4982 2 36.4384 2 35.3333Z"
+                                        stroke="#CCCCCC" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M17.4493 19.8882C16.8667 19.3053 16.1242 18.9083 15.3159 18.7475C14.5077 18.5866 13.6698 18.669 12.9084 18.9844C12.1469 19.2997 11.4961 19.8337 11.0382 20.519C10.5803 21.2042 10.3359 22.0098 10.3359 22.834C10.3359 23.6581 10.5803 24.4638 11.0382 25.149C11.4961 25.8342 12.1469 26.3683 12.9084 26.6836C13.6698 26.9989 14.5077 27.0814 15.3159 26.9205C16.1242 26.7596 16.8667 26.3627 17.4493 25.7798M22.8368 22.834C22.8368 23.9391 23.2758 24.9989 24.0572 25.7803C24.8386 26.5617 25.8984 27.0007 27.0035 27.0007C28.1086 27.0007 29.1684 26.5617 29.9498 25.7803C30.7312 24.9989 31.1702 23.9391 31.1702 22.834C31.1702 21.7289 30.7312 20.6691 29.9498 19.8877C29.1684 19.1063 28.1086 18.6673 27.0035 18.6673C25.8984 18.6673 24.8386 19.1063 24.0572 19.8877C23.2758 20.6691 22.8368 21.7289 22.8368 22.834ZM22.8368 22.834V10.334"
+                                        stroke="#CCCCCC" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M37.5 6.25C39.1576 6.25 40.7473 6.90848 41.9194 8.08058C43.0915 9.25269 43.75 10.8424 43.75 12.5V37.5C43.75 39.1576 43.0915 40.7473 41.9194 41.9194C40.7473 43.0915 39.1576 43.75 37.5 43.75H12.5C10.8424 43.75 9.25269 43.0915 8.08058 41.9194C6.90848 40.7473 6.25 39.1576 6.25 37.5V12.5C6.25 10.8424 6.90848 9.25269 8.08058 8.08058C9.25269 6.90848 10.8424 6.25 12.5 6.25H37.5ZM37.5 10.4167H12.5C11.9475 10.4167 11.4176 10.6362 11.0269 11.0269C10.6362 11.4176 10.4167 11.9475 10.4167 12.5V37.5C10.4167 38.0525 10.6362 38.5824 11.0269 38.9731C11.4176 39.3638 11.9475 39.5833 12.5 39.5833H37.5C38.0525 39.5833 38.5824 39.3638 38.9731 38.9731C39.3638 38.5824 39.5833 38.0525 39.5833 37.5V12.5C39.5833 11.9475 39.3638 11.4176 38.9731 11.0269C38.5824 10.6362 38.0525 10.4167 37.5 10.4167ZM16.6667 20.8333C17.1769 20.8334 17.6695 21.0207 18.0508 21.3598C18.4321 21.6989 18.6757 22.1661 18.7354 22.6729L18.75 22.9167V33.3333C18.7494 33.8643 18.5461 34.3751 18.1816 34.7612C17.817 35.1473 17.3188 35.3797 16.7888 35.4108C16.2587 35.4419 15.7367 35.2694 15.3295 34.9286C14.9223 34.5878 14.6606 34.1044 14.5979 33.5771L14.5833 33.3333V22.9167C14.5833 22.3641 14.8028 21.8342 15.1935 21.4435C15.5842 21.0528 16.1141 20.8333 16.6667 20.8333ZM22.9167 18.75C23.4046 18.7499 23.877 18.9211 24.2517 19.2337C24.6263 19.5462 24.8793 19.9804 24.9667 20.4604C25.3863 20.2181 25.8197 20.0004 26.2646 19.8083C27.6542 19.2146 29.7354 18.8875 31.6146 19.4771C32.6 19.7896 33.5896 20.3729 34.3229 21.3667C34.9792 22.2521 35.3333 23.3292 35.4042 24.5396L35.4167 25V33.3333C35.4161 33.8643 35.2128 34.3751 34.8482 34.7612C34.4837 35.1473 33.9855 35.3797 33.4554 35.4108C32.9253 35.4419 32.4034 35.2694 31.9962 34.9286C31.589 34.5878 31.3273 34.1044 31.2646 33.5771L31.25 33.3333V25C31.25 24.3125 31.0833 23.9917 30.975 23.8437C30.8193 23.6505 30.6051 23.5131 30.3646 23.4521C29.6396 23.2229 28.5958 23.3438 27.9021 23.6396C26.8604 24.0854 25.9062 24.7854 25.2563 25.4333L25 25.7083V33.3333C24.9994 33.8643 24.7961 34.3751 24.4316 34.7612C24.067 35.1473 23.5688 35.3797 23.0388 35.4108C22.5087 35.4419 21.9867 35.2694 21.5795 34.9286C21.1723 34.5878 20.9106 34.1044 20.8479 33.5771L20.8333 33.3333V20.8333C20.8333 20.2808 21.0528 19.7509 21.4435 19.3602C21.8342 18.9695 22.3641 18.75 22.9167 18.75ZM16.6667 14.5833C17.2192 14.5833 17.7491 14.8028 18.1398 15.1935C18.5305 15.5842 18.75 16.1141 18.75 16.6667C18.75 17.2192 18.5305 17.7491 18.1398 18.1398C17.7491 18.5305 17.2192 18.75 16.6667 18.75C16.1141 18.75 15.5842 18.5305 15.1935 18.1398C14.8028 17.7491 14.5833 17.2192 14.5833 16.6667C14.5833 16.1141 14.8028 15.5842 15.1935 15.1935C15.5842 14.8028 16.1141 14.5833 16.6667 14.5833Z"
+                                        fill="#CCCCCC" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mt-sm-0 mt-3 ">
+                    <div class="content wrapper-2 h-100">
+                        <span class="line d-flex position-absolute top-0 "><svg width="261" height="1"
+                                viewBox="0 0 261 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line y1="0.5" x2="261" y2="0.5" stroke="url(#paint0_linear_3335_17159)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_3335_17159" x1="0" y1="1.5" x2="261" y2="1.5"
+                                        gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#73FE01" stop-opacity="0" />
+                                        <stop offset="0.5" stop-color="#73FE01" />
+                                        <stop offset="1" stop-color="#73FE01" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                        <span class="bg-img position-absolute top-0  "><img src="./src/img/bg2.png" alt=""></span>
+                        <span class="blurdot position-absolute top-0 ms-5"></span>
+
+                        <h5 class="title mb-4">
+                            NXO <span style="color: #73fe01;">WALLET</span>
+                        </h5>
+                        <div class="logo gap-4  ">
+                            <a href="">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.25 43.75L21.975 28.025M21.975 28.025L6.25 6.25H16.6667L28.025 21.975M21.975 28.025L33.3333 43.75H43.75L28.025 21.975M43.75 6.25L28.025 21.975"
+                                        stroke="#CCCCCC" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                            <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.9656 32.1006L31.7198 39.7798C34.2198 42.6235 35.4719 44.0464 36.7823 43.6985C38.0906 43.3527 38.5406 41.4818 39.4385 37.7381L44.4177 16.9714C45.8031 11.2048 46.4948 8.32351 44.9573 6.90059C43.4198 5.47767 40.7552 6.53601 35.426 8.65059L10.7052 18.4693C6.44269 20.1631 4.31144 21.0089 4.17602 22.4631C4.16008 22.6113 4.16008 22.7607 4.17602 22.9089C4.30727 24.3652 6.43436 25.2173 10.6927 26.9235C12.6198 27.6964 13.5844 28.0839 14.276 28.8235C14.3538 28.9068 14.4288 28.9929 14.501 29.0818C15.1385 29.8735 15.4094 30.9152 15.9531 32.9902L16.9719 36.8798C17.4989 38.9006 17.7635 39.9131 18.4573 40.0506C19.151 40.1881 19.7531 39.3506 20.9594 37.6735L24.9656 32.1006ZM24.9656 32.1006L24.3052 31.4131C23.551 30.6256 23.1739 30.2339 23.1739 29.7464C23.1739 29.2589 23.5489 28.8652 24.3052 28.0798L31.7489 20.3214"
+                                        stroke="#CCCCCC" stroke-opacity="0.8" stroke-width="4" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee my-5 ">
+        <div class="track">
+            <div class="content">
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+                <span class="qu">Building the Future with NEXORA</span> <span class="qu">Empowering Growth with
+                    NEXORA</span>
+            </div>
+        </div>
+    </div>
+    <section class="faq">
+        <div class="container d-flex gap-5 flex-column">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="heading text-uppercase">
+                        <h5 class="sub-title text-white">
+                            frequently asked questions
+                        </h5>
+                        <h2 class="title">
+                            FAQ
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-md-0 gap-5">
+                <div class="col-md-4 col-12 d-flex flex-column  ">
+                    <div class="btns d-flex flex-column gap-3">
+                        <a class="btn">
+                            NXO TOKEN
+                        </a>
+                        <a class="btn">
+                            NXO LAB
+                        </a>
+                    </div>
+                    <div class="msgbox text-white  mt-3 position-relative d-flex flex-column justify-content-between">
+                        <!-- <div class="bg-img position-absolute "><img src="./src/img/bg2.png" alt=""></div> -->
+                        <div class="content text-center my-auto d-flex flex-column align-items-center ">
+                            <div class="msg-icon py-5"><img src="./src/img/msg.png" alt=""></div>
+                            <h6 class="title text-capitalize">
+                                you have different question ? ask away!
+                            </h6>
+                            <p class="para text-lowercase px-5 pt-3 text-center">
+                                YOUR question , MY ANSWERS . QUICK RESPONSES GURANTEED.
+                            </p>
+                        </div>
+                        <button class="contactbtn  text-center text-capitalize  align-self-end w-100 ">contact
+                            us</button>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="accordion d-flex flex-column gap-3 " id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapsefive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapseThree">
+                                    What is the LF Token?
+                                </button>
+                            </h2>
+                            <div id="collapsesix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    nxO Token is the native utility token of the nxo Labs ecosystem. It powers multiple
+                                    real-world and on-chain use cases—from staking and governance to market-making
+                                    rebates and discounted PoS payments. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overflow-hidden footer mb-0">
+        <!-- <div class=" container-2 overflow-hidden"> -->
+        <div class="container pb-0">
+            <!-- <div class="line d-flex "><img src="./src/img/Line 62.png" alt=""></div>
+                <div class="card-bg"><img src="./src/img/bg2.png" alt=""></div>
+                <span class="blurdot position-absolute top-0 "></span> -->
+            <div class="  content row d-flex flex-xl-row flex-column gap-xl-0 gap-5">
+                <div class="col-xl-4  footer-head col-12 d-flex flex-xl-column flex-row justify-content-between ">
+                    <div class="row ">
+                        <div class="col gap-xl-0 gap-4 d-flex justify-content-between align-items-center ">
+                            <div class="d-flex align-items-center">
+                                <div class="nxo-logo">
+                                    <img src="./src/img/nxo.footer.png" alt="">
+                                </div>
+                                <p class="title m-0">
+                                    NXO
+                                </p>
+                            </div>
+                            <div class="logos d-flex gap-4">
+                                <a href="" class="logo">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.75 26.25L13.185 16.815M13.185 16.815L3.75 3.75H10L16.815 13.185M13.185 16.815L20 26.25H26.25L16.815 13.185M26.25 3.75L16.815 13.185"
+                                            stroke="#73FE01" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+
+                                </a>
+                                <a href="" class="logo">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.9809 19.2604L19.0334 23.8679C20.5334 25.5741 21.2847 26.4279 22.0709 26.2191C22.8559 26.0116 23.1259 24.8891 23.6647 22.6429L26.6522 10.1829C27.4834 6.72285 27.8984 4.9941 26.9759 4.14035C26.0534 3.2866 24.4547 3.9216 21.2572 5.19035L6.42468 11.0816C3.86718 12.0979 2.58843 12.6054 2.50718 13.4779C2.49761 13.5668 2.49761 13.6564 2.50718 13.7454C2.58593 14.6191 3.86218 15.1304 6.41718 16.1541C7.57343 16.6179 8.15218 16.8504 8.56718 17.2941C8.61384 17.3441 8.65884 17.3958 8.70218 17.4491C9.08468 17.9241 9.24718 18.5491 9.57343 19.7941L10.1847 22.1279C10.5009 23.3404 10.6597 23.9479 11.0759 24.0304C11.4922 24.1129 11.8534 23.6104 12.5772 22.6041L14.9809 19.2604ZM14.9809 19.2604L14.5847 18.8479C14.1322 18.3754 13.9059 18.1404 13.9059 17.8479C13.9059 17.5554 14.1309 17.3191 14.5847 16.8479L19.0509 12.1929"
+                                            stroke="#73FE01" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="logo">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.125 15C3.125 9.4025 3.125 6.6025 4.86375 4.86375C6.6025 3.125 9.40125 3.125 15 3.125C20.5975 3.125 23.3975 3.125 25.1362 4.86375C26.875 6.6025 26.875 9.40125 26.875 15C26.875 20.5975 26.875 23.3975 25.1362 25.1362C23.3975 26.875 20.5988 26.875 15 26.875C9.4025 26.875 6.6025 26.875 4.86375 25.1362C3.125 23.3975 3.125 20.5988 3.125 15Z"
+                                            stroke="#73FE01" stroke-width="2" stroke-linejoin="round" />
+                                        <path
+                                            d="M20.625 15C20.625 16.4918 20.0324 17.9226 18.9775 18.9775C17.9226 20.0324 16.4918 20.625 15 20.625C13.5082 20.625 12.0774 20.0324 11.0225 18.9775C9.96763 17.9226 9.375 16.4918 9.375 15C9.375 13.5082 9.96763 12.0774 11.0225 11.0225C12.0774 9.96763 13.5082 9.375 15 9.375C16.4918 9.375 17.9226 9.96763 18.9775 11.0225C20.0324 12.0774 20.625 13.5082 20.625 15Z"
+                                            stroke="#73FE01" stroke-width="2" />
+                                        <path d="M21.8797 8.125H21.8672" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="logo">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 25.625C17.2625 25.625 19.4313 25.4013 21.4413 24.9913C23.9538 24.4788 25.2088 24.2238 26.3538 22.7513C27.5 21.2775 27.5 19.5863 27.5 16.2038V13.7963C27.5 10.4138 27.5 8.72129 26.3538 7.24879C25.2088 5.77629 23.9538 5.52005 21.4413 5.0088C19.3206 4.58374 17.1628 4.37144 15 4.37505C12.7375 4.37505 10.5688 4.5988 8.55875 5.0088C6.04625 5.5213 4.79125 5.77629 3.64625 7.24879C2.5 8.72254 2.5 10.4138 2.5 13.7963V16.2038C2.5 19.5863 2.5 21.2788 3.64625 22.7513C4.79125 24.2238 6.04625 24.48 8.55875 24.9913C10.5688 25.4013 12.7375 25.625 15 25.625Z"
+                                            stroke="#73FE01" stroke-width="2" />
+                                        <path
+                                            d="M19.9525 15.391C19.7675 16.1485 18.78 16.691 16.8063 17.7797C14.6587 18.9635 13.585 19.5547 12.7163 19.326C12.4267 19.2512 12.1563 19.1162 11.9225 18.9297C11.25 18.386 11.25 17.2572 11.25 14.9997C11.25 12.7422 11.25 11.6135 11.9225 11.0697C12.15 10.886 12.4225 10.7497 12.7163 10.6735C13.585 10.4447 14.6587 11.036 16.8063 12.2197C18.7813 13.3072 19.7675 13.851 19.9525 14.6085C20.015 14.866 20.015 15.1335 19.9525 15.391Z"
+                                            stroke="#73FE01" stroke-width="2" stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                                <a href="" class="logo">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.875 20C13.125 23.125 16.875 23.125 23.125 20" stroke="#73FE01"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M19.375 21.875L20.625 24.375C20.625 24.375 25.8388 22.715 27.5 20C27.5 18.75 28.1625 9.81625 23.75 6.875C21.875 5.625 18.75 5 18.75 5L17.5 7.5H15"
+                                            stroke="#73FE01" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.6603 21.875L9.41033 24.375C9.41033 24.375 4.19658 22.715 2.53533 20C2.53533 18.75 1.87283 9.81625 6.28533 6.875C8.16033 5.625 11.2853 5 11.2853 5L12.5353 7.5H15.0353"
+                                            stroke="#73FE01" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M10.625 17.5C9.59 17.5 8.75 16.3813 8.75 15C8.75 13.6187 9.59 12.5 10.625 12.5C11.66 12.5 12.5 13.6187 12.5 15C12.5 16.3813 11.66 17.5 10.625 17.5ZM19.375 17.5C18.34 17.5 17.5 16.3813 17.5 15C17.5 13.6187 18.34 12.5 19.375 12.5C20.41 12.5 21.25 13.6187 21.25 15C21.25 16.3813 20.41 17.5 19.375 17.5Z"
+                                            stroke="#73FE01" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="para m-0 d-flex align-self-center text-xl-start text-end">nxo Labs © 2025. All rights
+                            reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-8  col-12 text-uppercase ">
+                    <div class="row menu justify-content-between ">
+                        <div class="col-sm-3 col-6 d-flex flex-column ">
+                            <div class="content mx-auto ">
+                                <h6 class="title">Navigation</h6>
+                                <ul class="list p-0">
+                                    <li>market making</li>
+                                    <li>Acceleration</li>
+                                    <li>About us</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 d-flex flex-column">
+                            <div class="content mx-auto ">
+                                <h6 class="title">NXo labs</h6>
+                                <ul class="list p-0">
+                                    <li>whitepaper</li>
+                                    <li>Verification</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 d-flex flex-column">
+                            <div class="content mx-auto ">
+                                <h6 class="title">CORPORATE</h6>
+                                <ul class="list p-0">
+                                    <li>contracts</li>
+                                    <li>audit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-6 d-flex flex-column">
+                            <div class="content mx-auto ">
+                                <h6 class="title">ecosystem</h6>
+                                <ul class="list p-0">
+                                    <li>NXO POS</li>
+                                    <li>NXO wallet</li>
+                                    <li>LOVELY LEGEND</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

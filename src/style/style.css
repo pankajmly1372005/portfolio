@@ -1,0 +1,951 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img,
+svg {
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: Aeonik;
+  src: url(../fonts/Aeonik/fonnts.com-Aeonik-Regular.ttf);
+}
+@font-face {
+  font-family: Aeonik-bold;
+  src: url(../fonts/Aeonik/fonnts.com-Aeonik-Bold.ttf);
+}
+@font-face {
+  font-family: od-regular;
+  src: url(../fonts/Overcame-Demo/OvercameDemoRegular.ttf);
+}
+@font-face {
+  font-family: Cobbler-regular;
+  src: url(../fonts/Cobbler/Cobbler-Regular.woff);
+}
+:root {
+  --primary-font: Aeonik;
+  --primary-font-bold: Aeonik-bold;
+  --od-regular: od-regular;
+  --Cobbler-regular: Cobbler-regular;
+  --primary-white: white;
+}
+body {
+  background-color: black;
+}
+section {
+  padding: 120px 0px !important;
+}
+.container {
+  max-width: 1520px;
+}
+.container-2 {
+  max-width: 1800px;
+  margin: auto;
+}
+
+nav {
+  font-family: var(--primary-font-bold);
+}
+.nav-list {
+  font-size: 13px;
+  color: #ffffffb2;
+  list-style: none;
+  letter-spacing: 2px;
+}
+.nav-list:after {
+  content: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_3335_17824)"><path d="M3 12C3 13.1819 3.23279 14.3522 3.68508 15.4442C4.13738 16.5361 4.80031 17.5282 5.63604 18.364C6.47177 19.1997 7.46392 19.8626 8.55585 20.3149C9.64778 20.7672 10.8181 21 12 21C13.1819 21 14.3522 20.7672 15.4442 20.3149C16.5361 19.8626 17.5282 19.1997 18.364 18.364C19.1997 17.5282 19.8626 16.5361 20.3149 15.4442C20.7672 14.3522 21 13.1819 21 12C21 9.61305 20.0518 7.32387 18.364 5.63604C16.6761 3.94821 14.3869 3 12 3C9.61305 3 7.32387 3.94821 5.63604 5.63604C3.94821 7.32387 3 9.61305 3 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.60156 9H20.4016" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.60156 15H20.4016" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.4997 3C9.81501 5.69961 8.92188 8.81787 8.92188 12C8.92188 15.1821 9.81501 18.3004 11.4997 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.5 3C14.1847 5.69961 15.0778 8.81787 15.0778 12C15.0778 15.1821 14.1847 18.3004 12.5 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_3335_17824"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>');
+  margin-top: 4px;
+  color: var(--primary-white);
+}
+.nav-list li:hover {
+  color: #73fe0199;
+}
+.btn {
+  border: 1px solid #73fe01;
+  border-radius: 12px;
+  color: #ffffffb2;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-family: var(--primary-font-bold);
+}
+
+/* hero banner */
+.hero-banner {
+  padding: 150px 0;
+  margin: 0 !important;
+}
+.hero-banner .content {
+  letter-spacing: 2px;
+}
+.hero-banner .title {
+  font-family: var(--od-regular);
+  font-size: 72px;
+  color: var(--primary-white);
+  margin-bottom: 100px;
+}
+.hero-banner .para {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  color: #a9a9a9;
+  margin-bottom: 80px;
+}
+.quote {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.btn2 {
+  font-size: 14px;
+  letter-spacing: 2px;
+
+  font-family: var(--primary-font-bold);
+  font-weight: 600 !important;
+  border: 1px solid #73fe01 !important;
+  border-radius: 12px !important;
+}
+.green {
+  color: #73fe01;
+}
+.bg-circle {
+  box-shadow: 0px 0px 400px 250px rgba(115, 254, 1, 0.301);
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  right: 25%;
+  top: 40%;
+
+  z-index: -1;
+}
+.spiral {
+  z-index: -1;
+  max-width: 50%;
+}
+/* banner2 */
+.discover-products {
+  padding: 10px 0;
+}
+.discover-products .sub-title,
+.about-nxo .sub-title {
+  color: #ffffff;
+  font-family: var(--Cobbler-regular);
+  letter-spacing: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.discover-products .title,
+.about-nxo .title {
+  text-transform: uppercase;
+  font-family: var(--primary-font-bold);
+  background-clip: text;
+  font-size: 64px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(104.13deg, #ffffff 2.29%, #73fe01 86.13%);
+}
+.card {
+  background-color: #0d101a;
+  border-radius: 52px;
+  padding: 52px;
+}
+.card .heading {
+  position: relative;
+}
+.card .heading:after {
+  content: url('data:image/svg+xml,<svg  height="25" viewBox="0 0 214 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 24C1 24 29.5 13 213 1" stroke="%2373FE01" stroke-width="2"/></svg>');
+  position: absolute;
+  bottom: -25px;
+}
+.nxo {
+  font-size: 24px;
+  color: #73fe01;
+  transform: rotate(-90deg);
+  font-family: var(--primary-font-bold);
+}
+.pos {
+  font-family: var(--primary-font-bold);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 600;
+}
+.card .para {
+  color: #808080;
+  font-family: var(--primary-font);
+  font-size: 24px;
+}
+.card-btn {
+  font-family: var(--primary-font-bold);
+  font-size: 15px;
+  border: 1px solid #73fe01;
+  color: var(--primary-white);
+  padding: 13px 27px;
+  max-width: 183px;
+}
+.about-nxo .coin-img {
+  max-width: 250px;
+  max-height: 250px;
+}
+.blurdot {
+  background-color: #73fe01;
+  width: 1px;
+  box-shadow: 0px 0px 400px 150px rgba(115, 254, 1, 0.4);
+}
+.discover-products .line {
+  transform: translateY(-50%);
+}
+.discover-products .coin-img {
+  max-width: 350px;
+  max-height: 350px;
+  width: 100%;
+  height: 100%;
+}
+/*about nxo /////////////////////////////////////// */
+
+.btn-icon {
+  max-width: 20px;
+  max-height: 20px;
+  margin-top: -1px;
+}
+
+.about-nxo .card {
+  padding: 37px 60px;
+}
+
+.about-nxo .coin-img {
+  max-width: 174px;
+  max-height: 174px;
+}
+
+.about-nxo .card .para {
+  font-size: 20px;
+  font-family: var(--primary-font);
+  color: #cccccccc;
+}
+
+.about-nxo .card .price {
+  font-size: 32px;
+
+  font-family: var(--primary-font-bold);
+  color: var(--primary-white);
+}
+
+.about-nxo .card .line {
+  transform: translateY(-50%);
+  max-height: 100px !important;
+  overflow: hidden;
+  height: 100%;
+  width: 2px;
+}
+
+.about-nxo .btns button {
+  background: #0d101a85 !important;
+}
+
+.about-nxo .bg-img {
+  transform: translateY(-50%);
+}
+
+.about-nxo .about-table .content {
+  background: rgba(13, 16, 26, 1);
+  border-radius: 70px;
+}
+.about-nxo .about-table .content .text {
+  font-family: var(--primary-font-bold);
+  font-size: 20px;
+  color: white;
+}
+.about-nxo .about-table .content .text:focus {
+  border: none;
+  outline: none;
+}
+
+.about-table .title {
+  letter-spacing: normal;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: var(--primary-font) !important;
+  text-transform: capitalize;
+
+  color: rgba(255, 255, 255, 0.5) !important;
+  background-image: none;
+}
+
+.about-table .container {
+  padding: 78px 53px !important;
+}
+
+.about-table .price {
+  font-size: 24px;
+  font-family: var(--primary-font-bold);
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+}
+
+.token-info {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.05)
+    ),
+    linear-gradient(
+      98.81deg,
+      rgba(0, 0, 0, 0) 75.96%,
+      rgba(115, 254, 1, 0) 100%
+    );
+  max-height: 100px;
+  height: 100%;
+}
+/*about nxo /////////////////////////////////////// */
+/*buy-nxo /////////////////////////////////////// */
+.buy-nxo
+/* .footer */ {
+  padding: 0 30px;
+}
+.buy-nxo .container-2,
+.footer .container-2 {
+  background: rgba(13, 16, 26, 1);
+  position: relative;
+  border-radius: 70px;
+}
+
+.buy-nxo .container {
+  position: relative;
+  padding: 96px 50px;
+}
+.buy-nxo .slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buy-nxo .card {
+  max-width: 200px;
+  max-height: 200px;
+  width: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+}
+.buy-nxo .card .title {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-weight: 600;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-out;
+}
+.buy-nxo .coin-img {
+  max-width: 363px;
+  max-height: 390px;
+  width: 100%;
+  /* height: 100%; */
+  margin-top: -30px;
+}
+.buy-nxo .content .sub-title {
+  font-family: var(--Cobbler-regular);
+  font-size: 22px;
+  letter-spacing: 20px;
+  color: var(--primary-white);
+}
+.buy-nxo .content .title {
+  font-size: 64px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(
+    132.23deg,
+    #73fe01 -86.12%,
+    #ffffff 148.59%
+  );
+}
+.buy-nxo .content .para {
+  color: var(--primary-white);
+  font-size: 32px;
+  font-family: var(--primary-font-bold);
+}
+.buy-nxo .content .grey {
+  font-size: 20px;
+  font-family: var(--primary-font);
+}
+.buy-nxo .line {
+  max-width: 136px;
+  width: 100%;
+  height: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+.buy-nxo .card-bg {
+  position: absolute;
+  top: 0;
+  left: -10%;
+}
+.buy-nxo .blurdot {
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+.buy-nxo .card .icon,
+.buy-nxo .card .icon img {
+  transition: all 0.6s ease-out;
+}
+.buy-nxo .card:hover .title {
+  opacity: 1;
+}
+
+.buy-nxo .card:hover .icon {
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+.buy-nxo .card:hover .icon img {
+  transform: scale(0);
+  opacity: 0;
+}
+/*buy-nxo /////////////////////////////////////// */
+/*follow us /////////////////////////////////////// */
+.follow-us .heading {
+  text-transform: uppercase;
+}
+.follow-us .heading .sub-title {
+  font-family: var(--Cobbler-regular);
+  font-size: 22px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 20px;
+}
+
+.follow-us .heading .title {
+  font-family: var(--primary-font-bold);
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  background-image: linear-gradient(251.46deg, #ffffff 28.76%, #73fe01 135.37%);
+  background-clip: text;
+  color: transparent;
+}
+
+.follow-us .wrapper {
+  background: rgba(13, 16, 26, 1);
+  border-radius: 70px;
+  padding: 78px 37px;
+}
+.follow-us .wrapper-2 {
+  background: rgba(13, 16, 26, 1);
+  border-radius: 60px;
+  padding: 57px;
+  position: relative;
+  overflow: hidden;
+}
+.follow-us .wrapper-2 .bg-img {
+  left: -17%;
+}
+
+.follow-us .content .title {
+  font-family: var(--primary-font);
+  font-size: 40px;
+  color: var(--primary-white);
+}
+.green {
+  color: #73fe01;
+  font-family: var(--primary-font-bold);
+}
+.follow-us .content .para {
+  font-family: var(--primary-font);
+  font-weight: 300;
+  font-size: 18px;
+  margin-right: 100px;
+  color: var(--primary-white);
+}
+.follow-us .logo {
+  display: flex;
+  align-items: center;
+}
+.follow-us .logo a {
+  max-width: 50px;
+  display: flex;
+  transition: all ease-out;
+}
+
+.nxo-lab .content .title {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: var(--primary-font-bold);
+}
+.follow-us .wrapper .line {
+  max-width: 554px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+}
+.nxo-lab .line {
+  height: 2px;
+  width: 100%;
+  left: 0;
+  max-width: 260px;
+  left: 10%;
+}
+/*follow us /////////////////////////////////////// */
+/*marquee /////////////////////////////////////// */
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 24px;
+  font-family: var(--primary-font-bold);
+  text-transform: uppercase;
+  color: black;
+  background-color: #73fe01;
+  height: 64px;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 40s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.qu::before {
+  content: url('data:image/svg+xml,<svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.789 10.428L16.429 13.052L21.485 18.62L16.749 22.652L11.949 15.932L7.213 22.588L2.477 18.556L7.597 12.988L0.237 10.3L2.733 4.668L9.197 7.996L8.941 0.699997H15.021L14.765 8.06L21.229 4.732L23.789 10.428Z" fill="black"/></svg>');
+  margin: 0 20px 0 10px;
+  font-size: 38px;
+}
+/*marquee /////////////////////////////////////// */
+/*faq /////////////////////////////////////// */
+.faq .heading .sub-title {
+  font-size: 22px;
+  font-family: var(--Cobbler-regular);
+  letter-spacing: 20px;
+}
+.faq .heading .title {
+  font-size: 64px;
+  letter-spacing: 2px;
+  font-family: var(--primary-font);
+  font-weight: 900;
+  background: linear-gradient(92.12deg, #ffffff 23.48%, #73fe01 60.22%);
+  color: transparent;
+  background-clip: text;
+}
+.faq .btns a {
+  border: 1px solid rgba(115, 254, 1, 1);
+  background: rgba(115, 254, 1, 0.2);
+  color: white;
+  font-size: 20px;
+  padding: 20px 10px;
+}
+.msgbox {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  min-height: 500px;
+  overflow: hidden;
+}
+.msgbox .bg-img {
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+.msgbox .msg-icon {
+  max-width: 130px;
+  width: 100%;
+}
+.msgbox .msg-icon img {
+  width: auto;
+}
+.msgbox .content {
+  padding: 0 30px;
+}
+.msgbox .content .title {
+  font-size: 20px;
+}
+.msgbox .content .sub-title {
+  font-size: 18px;
+}
+.contactbtn {
+  padding: 20px 10px;
+  background-color: #73fe01;
+  font-size: 24px;
+  color: black;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+}
+
+.accordion-item {
+  background: rgba(115, 254, 1, 0.1);
+  border: 1px solid rgba(115, 254, 1, 1);
+  border-radius: 20px;
+  padding-top: 2px;
+}
+.accordion-button {
+  background: transparent !important;
+  padding: 38px !important;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.accordion-button::before {
+  content: "•";
+  margin-top: -3px;
+  padding-right: 10px;
+  font-size: 26px;
+  color: #73fe01;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: white !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.accordion-body {
+  padding: 0px 40px 40px 40px !important ;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+  border-radius: 20px !important;
+}
+.accordion-item:not(:first-of-type) {
+  border-top: inherit !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: #73fe01 !important;
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+/*faq /////////////////////////////////////// */
+/*footer /////////////////////////////////////// */
+.footer .container {
+  position: relative;
+  padding: 96px 10px;
+}
+.footer .nxo-logo {
+  max-width: 40px;
+  width: 100%;
+  max-height: 40px;
+  height: 100%;
+}
+.footer .content .logos .logo {
+  max-width: 30px;
+  max-height: 30px;
+  display: flex;
+}
+.footer .title {
+  font-size: 36px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer .para {
+  font-size: 16px;
+  font-family: var(--primary-font);
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.footer .menu .title {
+  font-size: 20px;
+  color: #73fe01;
+}
+
+.footer .menu .list li {
+  font-size: 14px;
+  list-style: none;
+  color: white;
+  margin: 30px 0;
+}
+/*footer /////////////////////////////////////// */
+
+@media (max-width: 1440px) {
+  .hero-banner .title {
+    font-size: 50px;
+  }
+  .spiral {
+    max-height: 800px;
+  }
+  .card {
+    padding: 40px;
+  }
+  .about-nxo .card {
+    padding: 37px 40px;
+  }
+  section {
+    padding: 60px 0px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-list {
+    font-size: 12px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .arrow_svg {
+    max-width: 24px;
+    max-height: 9px;
+  }
+  .hero-banner {
+    padding: 80px 0;
+  }
+  .spiral {
+    max-width: 50%;
+    max-height: 100%;
+    height: 100%;
+  }
+  .bg-circle {
+    box-shadow: 0px 0px 200px 100px rgba(115, 254, 1, 0.5);
+  }
+  .hero-banner .title {
+    font-size: 46px;
+    margin-bottom: 70px;
+  }
+  .hero-banner .para {
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+  .btn2 {
+    font-size: 10px;
+    word-break: nowrap;
+  }
+  .card .pos {
+    font-size: 48px;
+  }
+  .card .para {
+    font-size: 18px;
+  }
+  .about-nxo .card {
+    padding: 37px 60px;
+  }
+  .buy-nxo .content .sub-title {
+    font-size: 18px;
+    letter-spacing: 8px;
+  }
+  .buy-nxo .content .title,
+  .follow-us .heading .title {
+    font-size: 48px;
+    letter-spacing: 8px;
+  }
+  .buy-nxo .content .para {
+    font-size: 20px;
+    letter-spacing: 8px;
+  }
+  .footer .para {
+    font-size: 14px;
+  }
+  section {
+    padding: 60px 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 60px 0;
+  }
+  .hero-banner .title {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  .hero-banner .para {
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+  .btn2 {
+    font-size: 10px;
+    word-break: nowrap;
+  }
+  .about-nxo .card .price {
+    font-size: 24px;
+  }
+  .about-table .container {
+    padding: 55px 30px !important;
+  }
+  .about-table .title {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .about-table .price,
+  .about-nxo .about-table .content .text {
+    font-size: 18px;
+  }
+  .buy-nxo {
+    padding: 10px;
+  }
+  .buy-nxo .container {
+    padding: 50px 50px;
+  }
+  .buy-nxo .content .sub-title {
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+  .buy-nxo .content .title,
+  .follow-us .heading .title {
+    font-size: 38px;
+    letter-spacing: 8px;
+  }
+  .buy-nxo .content .para {
+    font-size: 16px;
+    letter-spacing: 8px;
+  }
+  .buy-nxo .coin-img {
+    margin-top: 0px;
+  }
+  .buy-nxo .card {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .footer-head {
+    flex-direction: column !important;
+    gap: 30px;
+  }
+  .footer-head .para {
+    justify-content: center;
+    text-align: center !important;
+  }
+  section {
+    padding: 40px 0px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-banner {
+    padding: 30px 0;
+  }
+  .hero-banner .title {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
+
+  .hero-banner .para {
+    margin-bottom: 40px;
+    font-size: 12px;
+  }
+  .discover-products .sub-title,
+  .about-nxo .sub-title {
+    font-size: 18px;
+  }
+  .discover-products .title,
+  .about-nxo .title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .quote {
+    font-size: 12px;
+  }
+  .btn2 {
+    font-size: 10px;
+    word-break: nowrap;
+  }
+  .about-nxo .card .price {
+    font-size: 20px;
+  }
+  .about-nxo .card {
+    padding: 37px 30px;
+  }
+  .about-table .title {
+    font-size: 18px;
+  }
+  .about-table .price,
+  .about-nxo .about-table .content .text {
+    font-size: 14px;
+  }
+  .about-table .container {
+    padding: 50px 20px !important;
+  }
+  .buy-nxo .content .sub-title {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+  .buy-nxo .content .title,
+  .follow-us .heading .title {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+  .buy-nxo .content .para {
+    font-size: 12px;
+    letter-spacing: 6px;
+  }
+  .faq .btns a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 425px) {
+  .bg-circle {
+    box-shadow: 0px 0px 200px 80px rgba(115, 254, 1, 0.301);
+  }
+  .hero-banner .title {
+    font-size: 30px;
+  }
+  .card-btn {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .about-table .price {
+    font-size: 10px;
+  }
+  .discover-products .title,
+  .about-nxo .title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .about-table .title,
+  .follow-us .heading .title {
+    font-size: 14px;
+  }
+  .buy-nxo .coin-img {
+    display: none;
+  }
+  .buy-nxo .content div:first-child {
+    width: 100%;
+    max-width: 100%;
+  }
+  .faq .heading .sub-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .faq .heading .title {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  .accordion-button {
+    padding: 20px 20px !important;
+  }
+  .buy-nxo .card {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 40px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .coin-img {
+    display: none;
+  }
+}
