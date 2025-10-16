@@ -33,6 +33,13 @@ svg {
 }
 body {
   background-color: black;
+  position: relative;
+}
+.bgline {
+  width: 70%;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-51%);
 }
 section {
   padding: 120px 0px !important;
@@ -64,13 +71,41 @@ nav {
 }
 .btn {
   border: 1px solid #73fe01;
+  position: relative;
   border-radius: 12px;
   color: #ffffffb2;
   letter-spacing: 2px;
   font-size: 13px;
   font-family: var(--primary-font-bold);
+  overflow: hidden;
 }
-
+.hero-banner .btn::before {
+  position: absolute;
+  top: 50%;
+  background: none;
+  transform-origin: 50% 100%;
+  transform: translate3d(-180%, -50%, 0);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+  content: url('data:image/svg+xml, <svg width="40" height="9" viewBox="0 0 40 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 4.49967H38M38 4.49967L33.8 1M38 4.49967L33.8 8" stroke="%2373FE01" stroke-width="1.68" /></svg>');
+}
+.btn:hover {
+  color: #ffffffb2;
+  transition: all 1s ease-in-out;
+  border: 1px solid #73fe01;
+}
+.btn:hover::before {
+  transform: translate3d(0%, -50%, 0);
+}
+.btn > div {
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+.btn:hover > div {
+  transform: translate3d(150%, 0, 0);
+  color: #73fe01;
+}
+.btn:hover {
+  color: #73fe01;
+}
 /* hero banner */
 .hero-banner {
   padding: 150px 0;
@@ -99,11 +134,35 @@ nav {
 .btn2 {
   font-size: 14px;
   letter-spacing: 2px;
-
+  position: relative;
   font-family: var(--primary-font-bold);
   font-weight: 600 !important;
   border: 1px solid #73fe01 !important;
   border-radius: 12px !important;
+}
+.btn2::before {
+  position: absolute;
+  top: 50%;
+  background: none;
+  transform-origin: 50% 100%;
+  transform: translate3d(-180%, -50%, 0);
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+  content: url('data:image/svg+xml, <svg width="40" height="9" viewBox="0 0 40 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 4.49967H38M38 4.49967L33.8 1M38 4.49967L33.8 8" stroke="%2373FE01" stroke-width="1.68" /></svg>');
+}
+.btn2:hover {
+  color: #73fe01;
+  transition: all 1s ease-in-out;
+  border: 1px solid #73fe01;
+}
+.btn2:hover::before {
+  transform: translate3d(0%, -50%, 0);
+}
+.btn2 > div {
+  transition: transform 0.3s cubic-bezier(0.5, 0.5, 0.3, 1);
+}
+.btn2:hover > div {
+  transform: translate3d(33%, 0, 0);
+  color: #73fe01;
 }
 .green {
   color: #73fe01;
@@ -758,6 +817,10 @@ nav {
   }
   section {
     padding: 60px 0px !important;
+  }
+  .btn2:hover > div {
+    transform: translate3d(40%, 0, 0);
+    color: #73fe01;
   }
 }
 @media (max-width: 768px) {
