@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEXORA</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -315,7 +317,7 @@
         </div>
     </section>
 
-    <section class="discover-products container-fluid ">
+    <section class="discover-products overflow-hidden container-fluid ">
         <div class="container">
             <div class="row mb-5">
                 <div class="content text-center">
@@ -328,7 +330,7 @@
                 </div>
             </div>
             <div class="row d-flex flex-lg-row flex-column g-3  px-lg-0 px-3">
-                <div class="col">
+                <div class="col " data-aos="fade-right" data-aos-delay="500">
                     <div class="card d-flex flex-row position-relative overflow-hidden">
                         <div class="bg-img position-absolute top-0 start-0 ">
                             <img src="./src/img/card-bg.png" alt="">
@@ -353,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-left" data-aos-delay="500">
                     <div class="card d-flex flex-row position-relative overflow-hidden">
                         <div class="bg-img position-absolute top-0 start-0 ">
                             <img src="./src/img/card-bg.png" alt="">
@@ -383,7 +385,7 @@
         </div>
     </section>
 
-    <section class="about-nxo">
+    <section class="about-nxo overflow-hidden">
         <div class="container">
             <div class="row mb-5">
                 <div class="content  text-center">
@@ -397,7 +399,7 @@
             </div>
 
             <div class=" row d-flex flex-lg-row flex-column gap-lg-0 gap-3 flex-column px-lg-0 px-3">
-                <div class="col">
+                <div class="col" data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="1000">
                     <div class="card d-flex flex-row position-relative overflow-hidden h-100  ">
                         <div class=" bg-img position-absolute top-50 start-0 ">
                             <img src="./src/img/card-bg.png" alt="">
@@ -429,7 +431,7 @@
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col" data-aos="fade-down-left" data-aos-delay="300" data-aos-duration="1000">
                     <div class="card d-flex flex-row position-relative overflow-hidden h-100  ">
                         <div class=" bg-img position-absolute top-50 start-0 ">
                             <img src="./src/img/card-bg.png" alt="">
@@ -464,7 +466,7 @@
             </div>
 
 
-            <div class=" about-table mt-5">
+            <div class=" about-table mt-5" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
                 <div class="content container">
                     <div class="row px-3 g-4 ">
                         <div class="col-12  ">
@@ -572,7 +574,7 @@
         </div>
     </section>
 
-    <section class="follow-us">
+    <section class="follow-us overflow-hidden">
         <div class="container">
             <div class="row mb-5">
                 <div class="col heading text-center">
@@ -954,7 +956,7 @@
                     <div class="row ">
                         <div class="col gap-xl-0 gap-4 d-flex justify-content-between align-items-center ">
                             <div class="d-flex align-items-center">
-                                <div class="nxo-logo">
+                                <div class="nxo-logo d-sm-block d-none">
                                     <img src="./src/img/nxo.footer.png" alt="">
                                 </div>
                                 <p class="title m-0">
@@ -1085,7 +1087,9 @@
         </div>
         </div>
     </section>
-
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

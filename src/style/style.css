@@ -8,6 +8,7 @@ svg {
   width: 100%;
   height: 100%;
 }
+
 @font-face {
   font-family: Aeonik;
   src: url(../fonts/Aeonik/fonnts.com-Aeonik-Regular.ttf);
@@ -39,6 +40,7 @@ body {
   width: 70%;
   left: 50%;
   z-index: -1;
+  height: 100%;
   transform: translateX(-51%);
 }
 section {
@@ -361,6 +363,7 @@ nav {
 .buy-nxo
 /* .footer */ {
   padding: 0 30px;
+  margin: 0 10px;
 }
 .buy-nxo .container-2,
 .footer .container-2 {
@@ -644,26 +647,54 @@ nav {
   border: 0;
   outline: 0;
 }
-
+.accordion {
+  counter-reset: btn;
+}
 .accordion-item {
   background: rgba(115, 254, 1, 0.1);
   border: 1px solid rgba(115, 254, 1, 1);
   border-radius: 20px;
   padding-top: 2px;
+  counter-increment: btn;
 }
 .accordion-button {
   background: transparent !important;
   padding: 38px !important;
+  padding-left: 120px !important;
   color: white;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
 }
 .accordion-button::before {
-  content: "•";
+  /* content: "•"; */
+  position: absolute;
+  left: 4%;
+  content: counter(btn);
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -3px;
-  padding-right: 10px;
-  font-size: 26px;
+  width: 100%;
+  height: 100%;
+  max-width: 35px;
+  max-height: 35px;
+  font-size: 20px;
   color: #73fe01;
+}
+.accordion-button::after {
+  margin-left: auto;
+  content: "+";
+  background-image: none !important;
+  width: 20px !important;
+  height: 20px !important;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out !important;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -679,17 +710,22 @@ nav {
   color: white;
   font-weight: 400;
   text-transform: capitalize;
+  text-align: justify;
 }
 .accordion-item:first-of-type,
 .accordion-item:last-of-type {
   border-radius: 20px !important;
 }
 .accordion-item:not(:first-of-type) {
-  border-top: inherit !important;
+  border-top: 1px solid #73fe01 !important;
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: #73fe01 !important;
-  transform: var(--bs-accordion-btn-icon-transform);
+  transform: none !important;
+  content: "-";
+  font-size: 28px !important;
+  width: 20px !important;
+  height: 20px !important;
+  transition: all 0.1s ease-out !important;
 }
 /*faq /////////////////////////////////////// */
 /*footer /////////////////////////////////////// */
@@ -974,7 +1010,7 @@ nav {
   }
   .discover-products .title,
   .about-nxo .title {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .about-table .title,
@@ -998,6 +1034,7 @@ nav {
   }
   .accordion-button {
     padding: 20px 20px !important;
+    padding-left: 60px !important;
   }
   .buy-nxo .card {
     max-width: 120px;
